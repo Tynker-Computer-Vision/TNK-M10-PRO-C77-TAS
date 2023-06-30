@@ -18,16 +18,16 @@ import numpy as np
 features = 'null'
 
 # load features from features.pkl
-with open('features.pkl', 'rb') as f:
+with open('../features.pkl', 'rb') as f:
     features = pickle.load(f)
 
 # Load the captions from caption.txt
-with open('captions.txt', 'r') as f:
+with open('../captions.txt', 'r') as f:
     next(f)
     captions_doc = f.read()
 
 # Load the model
-model = keras.models.load_model('best_model.h5')
+model = keras.models.load_model('../best_model.h5')
 
 # Create mapping of image to captions
 mapping = {}
