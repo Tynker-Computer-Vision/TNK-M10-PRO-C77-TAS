@@ -51,7 +51,6 @@ for line in tqdm(captions_doc.split('\n')):
     mapping[image_id].append(caption)
 
 # Print the mapping dictionary
-print(mapping)
-
+print(mapping["1000268201_693b08cb0e"])
 
 
